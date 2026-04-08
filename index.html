@@ -27,7 +27,7 @@
       <div class="container hero-inner">
         <p class="hero-tag">Full-Stack Engineer · Available for consulting</p>
         <h1>Jorge <em>Ortega</em></h1>
-        <p class="hero-subtitle">18 years building products that scale.</p>
+        <p class="hero-subtitle" id="years-exp"></p>
         <p class="hero-desc">
           Senior full-stack engineer specializing in <strong>Ruby on Rails, React, and TypeScript</strong>.
           I help <strong>start-ups, SMEs and scale-ups</strong> from all around the world, ship reliable software — from architecting
@@ -70,7 +70,7 @@
           </div>
           <div class="about-stats">
             <div class="stat">
-              <div class="stat-number">18</div>
+              <div class="stat-number" id="years-exp-stat"></div>
               <div class="stat-label">Years of professional experience</div>
             </div>
             <div class="stat">
@@ -278,6 +278,14 @@
         </span>
       </div>
     </footer>
+
+    <script>
+      const careerYears = new Date().getFullYear() - 2007;
+      const text = careerYears + ' years building products that scale.';
+    
+      document.getElementById('years-exp').textContent = text;
+      document.getElementById('years-exp-stat').textContent = careerYears;
+    </script>
 
   </body>
 </html>
