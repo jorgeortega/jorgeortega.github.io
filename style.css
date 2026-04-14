@@ -220,17 +220,24 @@ section {
   font-weight: 500;
 }
 
-.section-label::before {
+/* Section labels */
+#about .section-label::before {
   content: "01 — ";
 }
-#work .section-label::before {
+#projects .section-label::before {
   content: "02 — ";
 }
-#stack .section-label::before {
+#articles .section-label::before {
   content: "03 — ";
 }
-#contact .section-label::before {
+#work .section-label::before {
   content: "04 — ";
+}
+#stack .section-label::before {
+  content: "05 — ";
+}
+#contact .section-label::before {
+  content: "06 — ";
 }
 
 h2 {
@@ -346,6 +353,14 @@ h2 {
   color: var(--text-muted);
   line-height: 1.65;
   margin: 0;
+}
+
+/* Articles */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 /* Timeline */
@@ -583,6 +598,9 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -594,7 +612,7 @@ footer {
 
 /* Hamburger Styles */
 .hamburger {
-  display: none; /* Hidden on desktop */
+  display: none;
   cursor: pointer;
   background: none;
   border: none;
@@ -604,8 +622,8 @@ footer {
 
 .hamburger .bar {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 22px;
+  height: 1.5px;
   margin: 5px 0;
   background-color: var(--accent-dark);
   transition: all 0.3s ease;
@@ -617,38 +635,37 @@ footer {
     display: block;
   }
 
-  /* Animate Hamburger into X */
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(6.5px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6.5px) rotate(-45deg);
   }
 
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden by default */
+    right: -100%;
     flex-direction: column;
     background: var(--bg);
     width: 100%;
     height: 100vh;
-    padding-top: 8rem;
-    align-items: center;
-    transition: 0.4s ease-in-out;
+    padding: 8rem 2rem;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 105;
-    gap: 3rem; /* Spacing between links on mobile */
+    gap: 2.5rem;
+    text-align: center;
+    border-left: 1px solid var(--border);
   }
 
   .nav-links.active {
-    right: 0; /* Slide in */
+    right: 0;
   }
-
   .nav-links a {
-    font-size: 1.5rem; /* Larger links for mobile tap */
+    font-size: 1.25rem;
     color: var(--accent-dark);
   }
 }
