@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <nav>
       <span class="nav-logo">jorge.ortega</span>
+
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -30,13 +36,17 @@
         <h1>Jorge <em>Ortega</em></h1>
         <p class="hero-subtitle" id="years-exp"></p>
         <p class="hero-desc">
-          Senior full-stack engineer specializing in <strong>Ruby on Rails, React, and TypeScript</strong>.
-          I help <strong>start-ups, SMEs and scale-ups</strong> from all around the world, ship reliable software — from architecting
-          multi-tenant SaaS platforms to leading frontend migrations. Based in Germany,
-          relocating to Argentina in late 2026.
+          Senior full-stack engineer specializing in
+          <strong>Ruby on Rails, React, and TypeScript</strong>. I help
+          <strong>start-ups, SMEs and scale-ups</strong> from all around the
+          world, ship reliable software — from architecting multi-tenant SaaS
+          platforms to leading frontend migrations. Based in Germany, relocating
+          to Argentina in late 2026.
         </p>
         <div class="hero-cta">
-          <a href="mailto:jorgeortega@gmail.com" class="btn btn-primary">Let's work together</a>
+          <a href="mailto:jorgeortega@gmail.com" class="btn btn-primary"
+            >Let's work together</a
+          >
           <a href="#work" class="btn btn-secondary">See my work</a>
         </div>
       </div>
@@ -46,27 +56,29 @@
     <section id="about">
       <div class="container">
         <p class="section-label">About</p>
-        <h2>Engineer by craft,<br>generalist by nature.</h2>
+        <h2>Engineer by craft,<br />generalist by nature.</h2>
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I started my career in Costa Rica in 2007 and have spent the last nine years
-              in Germany, where I grew from mid-level engineer to senior at
-              <strong>samedi GmbH</strong> — a healthcare SaaS company. I was a core contributor
-              to their Patient Portal product: a white-label, multi-tenant platform deployed
-              across hospitals and clinics across Europe.
+              I started my career in Costa Rica in 2007 and have spent the last
+              nine years in Germany, where I grew from mid-level engineer to
+              senior at
+              <strong>samedi GmbH</strong> — a healthcare SaaS company. I was a
+              core contributor to their Patient Portal product: a white-label,
+              multi-tenant platform deployed across hospitals and clinics across
+              Europe.
             </p>
             <p>
-              Before samedi, I built UIs at <strong>Backcountry.com</strong> — one of the
-              largest outdoor e-commerce platforms in the US — and started my career at
-              <strong>Grupo Nación</strong> in Costa Rica, one of Latin America's leading
-              media groups.
+              Before samedi, I built UIs at <strong>Backcountry.com</strong> —
+              one of the largest outdoor e-commerce platforms in the US — and
+              started my career at <strong>Grupo Nación</strong> in Costa Rica,
+              one of Latin America's leading media groups.
             </p>
             <p>
               I work across the full stack but I'm particularly strong in the
-              <strong>Rails + React + TypeScript</strong> combination. I care deeply about
-              clean architecture, performance, and making codebases that future engineers
-              will thank you for.
+              <strong>Rails + React + TypeScript</strong> combination. I care
+              deeply about clean architecture, performance, and making codebases
+              that future engineers will thank you for.
             </p>
           </div>
           <div class="about-stats">
@@ -80,7 +92,9 @@
             </div>
             <div class="stat">
               <div class="stat-number">3</div>
-              <div class="stat-label">Countries — Costa Rica · USA · Germany</div>
+              <div class="stat-label">
+                Countries — Costa Rica · USA · Germany
+              </div>
             </div>
           </div>
         </div>
@@ -91,19 +105,23 @@
     <section id="projects">
       <div class="container">
         <p class="section-label">Projects</p>
-        <h2>Things I've<br>built and shipped.</h2>
+        <h2>Things I've<br />built and shipped.</h2>
         <div class="projects-grid">
-    
           <div class="project-card">
             <div class="project-card-header">
               <span class="project-icon">✈️</span>
-              <a href="https://flight-status-kappa.vercel.app/" target="_blank" class="project-link">
+              <a
+                href="https://flight-status-kappa.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
                 Live demo →
               </a>
             </div>
             <h3 class="project-title">Flight Status</h3>
             <p class="project-desc">
-              Real-time flight departures and arrivals by airport, built with React and the AviationStack API.
+              Real-time flight departures and arrivals by airport, built with
+              React and the AviationStack API.
             </p>
             <div class="timeline-tags">
               <span class="tag">React</span>
@@ -112,7 +130,6 @@
               <span class="tag">REST API</span>
             </div>
           </div>
-    
         </div>
       </div>
     </section>
@@ -121,20 +138,20 @@
     <section id="work">
       <div class="container">
         <p class="section-label">Work</p>
-        <h2>A career built<br>across continents.</h2>
+        <h2>A career built<br />across continents.</h2>
         <div class="timeline">
-
           <div class="timeline-item">
-            <div class="timeline-year">2016 — Present<br>Berlin, Germany</div>
+            <div class="timeline-year">2016 — Present<br />Berlin, Germany</div>
             <div class="timeline-content">
               <h3>Senior Full-Stack Engineer</h3>
               <p class="timeline-company">samedi GmbH · Healthcare SaaS</p>
               <p class="timeline-desc">
-                Grew from mid-level to senior over 9 years at one of Germany's leading
-                healthcare SaaS companies. Core contributor to the Patient Portal — a
-                white-label, multi-tenant platform enabling hospitals and clinics to deploy
-                branded appointment and communication portals. Led frontend efforts as one
-                of the few engineers with TypeScript and React expertise on the team.
+                Grew from mid-level to senior over 9 years at one of Germany's
+                leading healthcare SaaS companies. Core contributor to the
+                Patient Portal — a white-label, multi-tenant platform enabling
+                hospitals and clinics to deploy branded appointment and
+                communication portals. Led frontend efforts as one of the few
+                engineers with TypeScript and React expertise on the team.
               </p>
               <div class="timeline-tags">
                 <span class="tag">Ruby on Rails</span>
@@ -148,14 +165,15 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-year">2013 — 2016<br>Remote / USA</div>
+            <div class="timeline-year">2013 — 2016<br />Remote / USA</div>
             <div class="timeline-content">
               <h3>UI Engineer</h3>
               <p class="timeline-company">Backcountry.com · E-commerce</p>
               <p class="timeline-desc">
-                Built and maintained frontend experiences for one of the largest outdoor
-                gear e-commerce platforms in the United States. Worked on performance,
-                UI components, and customer-facing features at significant scale.
+                Built and maintained frontend experiences for one of the largest
+                outdoor gear e-commerce platforms in the United States. Worked
+                on performance, UI components, and customer-facing features at
+                significant scale.
               </p>
               <div class="timeline-tags">
                 <span class="tag">JavaScript</span>
@@ -167,39 +185,45 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-year">2010 — 2013<br>Remote / USA</div>
+            <div class="timeline-year">2010 — 2013<br />Remote / USA</div>
             <div class="timeline-content">
-            <h3>Frontend Engineer</h3>
-            <p class="timeline-company">Possible (WPP / VML) · Digital Agency</p>
-            <p class="timeline-desc">
-              Collaborated closely with designers to build pixel-perfect, high-impact campaign
-              experiences for globally recognised brands. A standout project was <em>Yeah!</em> —
-              a Facebook campaign for AMC's The Walking Dead — a technically complex interactive
-              experience that pushed the boundaries of what was possible on the platform at the
-              time. This is where I developed the JavaScript foundations I still rely on today:
-              design patterns, performance optimisation, and industry best practices.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Frontend</span>
-              <span class="tag">Campaign development</span>
-              <span class="tag">Dell</span>
-              <span class="tag">Mazda</span>
-              <span class="tag">AMC Studios</span>
+              <h3>Frontend Engineer</h3>
+              <p class="timeline-company">
+                Possible (WPP / VML) · Digital Agency
+              </p>
+              <p class="timeline-desc">
+                Collaborated closely with designers to build pixel-perfect,
+                high-impact campaign experiences for globally recognised brands.
+                A standout project was <em>Yeah!</em> — a Facebook campaign for
+                AMC's The Walking Dead — a technically complex interactive
+                experience that pushed the boundaries of what was possible on
+                the platform at the time. This is where I developed the
+                JavaScript foundations I still rely on today: design patterns,
+                performance optimisation, and industry best practices.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Frontend</span>
+                <span class="tag">Campaign development</span>
+                <span class="tag">Dell</span>
+                <span class="tag">Mazda</span>
+                <span class="tag">AMC Studios</span>
+              </div>
             </div>
           </div>
-        </div>
 
           <div class="timeline-item">
-            <div class="timeline-year">2007 — 2010<br>Costa Rica</div>
+            <div class="timeline-year">2007 — 2010<br />Costa Rica</div>
             <div class="timeline-content">
               <h3>Software Engineer</h3>
-              <p class="timeline-company">El Financiero / Grupo Nación · Media</p>
+              <p class="timeline-company">
+                El Financiero / Grupo Nación · Media
+              </p>
               <p class="timeline-desc">
-                Started my career as part of the technology team at Grupo Nación, one of
-                Latin America's leading media and publishing groups. Built and maintained
-                web platforms for El Financiero, a leading financial news outlet in
-                Costa Rica.
+                Started my career as part of the technology team at Grupo
+                Nación, one of Latin America's leading media and publishing
+                groups. Built and maintained web platforms for El Financiero, a
+                leading financial news outlet in Costa Rica.
               </p>
               <div class="timeline-tags">
                 <span class="tag">Web development</span>
@@ -208,7 +232,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -217,7 +240,7 @@
     <section id="stack">
       <div class="container">
         <p class="section-label">Stack</p>
-        <h2>Tools I trust<br>in production.</h2>
+        <h2>Tools I trust<br />in production.</h2>
         <div class="stack-grid">
           <div class="stack-item">
             <span class="stack-item-icon">💎</span>
@@ -227,7 +250,9 @@
           <div class="stack-item">
             <span class="stack-item-icon">⚛️</span>
             <div class="stack-item-name">React</div>
-            <div class="stack-item-role">Frontend · SPAs · Component systems</div>
+            <div class="stack-item-role">
+              Frontend · SPAs · Component systems
+            </div>
           </div>
           <div class="stack-item">
             <span class="stack-item-icon">🔷</span>
@@ -237,17 +262,23 @@
           <div class="stack-item">
             <span class="stack-item-icon">🐘</span>
             <div class="stack-item-name">PostgreSQL, MongoDB, SQLite</div>
-            <div class="stack-item-role">Database · Migrations · Performance</div>
+            <div class="stack-item-role">
+              Database · Migrations · Performance
+            </div>
           </div>
           <div class="stack-item">
             <span class="stack-item-icon">🐳</span>
             <div class="stack-item-name">Docker</div>
-            <div class="stack-item-role">Containers · Dev environments · Deploy</div>
+            <div class="stack-item-role">
+              Containers · Dev environments · Deploy
+            </div>
           </div>
           <div class="stack-item">
             <span class="stack-item-icon">🖥️</span>
             <div class="stack-item-name">Bash / Linux</div>
-            <div class="stack-item-role">Scripting · Automation · CLI tooling</div>
+            <div class="stack-item-role">
+              Scripting · Automation · CLI tooling
+            </div>
           </div>
         </div>
       </div>
@@ -257,42 +288,80 @@
     <section id="contact">
       <div class="container">
         <p class="section-label">Contact</p>
-        <h2>Let's build<br>something together.</h2>
+        <h2>Let's build<br />something together.</h2>
         <div class="contact-inner">
           <div class="contact-text">
             <p>
-              I'm available for <strong>consulting engagements, fractional engineering work,
-              and fixed-scope projects</strong> with start-ups, SMEs and scale-ups all around the world.
+              I'm available for
+              <strong
+                >consulting engagements, fractional engineering work, and
+                fixed-scope projects</strong
+              >
+              with start-ups, SMEs and scale-ups all around the world.
             </p>
             <p>
-              Born in Costa Rica, married to an Argentinian, and raising my children in Germany,
-              my life has always been shaped by the richness of different cultures, languages, and
-              perspectives. This truly global background gives me a unique ability to understand and
-              connect with clients and projects from any corner of the world. Whether working across
-              Latin America, Europe, or beyond, I bring an internationally minded approach, one that
-              is naturally attuned to diverse markets, communication styles, and business cultures.
-              I don't just work globally; I live it.
+              Born in Costa Rica, married to an Argentinian, and raising my
+              children in Germany, my life has always been shaped by the
+              richness of different cultures, languages, and perspectives. This
+              truly global background gives me a unique ability to understand
+              and connect with clients and projects from any corner of the
+              world. Whether working across Latin America, Europe, or beyond, I
+              bring an internationally minded approach, one that is naturally
+              attuned to diverse markets, communication styles, and business
+              cultures. I don't just work globally; I live it.
             </p>
             <p>
-              Whether you need a senior engineer to lead a feature, audit your architecture,
-              or be your go-to technical partner — I'd love to hear about what you're building.
+              Whether you need a senior engineer to lead a feature, audit your
+              architecture, or be your go-to technical partner — I'd love to
+              hear about what you're building.
             </p>
-            <a href="mailto:jorgeortega@gmail.com" class="btn btn-primary">Send me an email</a>
+            <a href="mailto:jorgeortega@gmail.com" class="btn btn-primary"
+              >Send me an email</a
+            >
           </div>
           <div class="contact-links">
-            <a href="https://linkedin.com/in/jorgeortega" class="contact-link" target="_blank">
+            <a
+              href="https://linkedin.com/in/jorgeortega"
+              class="contact-link"
+              target="_blank"
+            >
               <span>LinkedIn</span>
-              <span style="font-family:var(--mono);font-size:0.7rem;color:var(--text-dim)">/in/jorgeortega</span>
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.7rem;
+                  color: var(--text-dim);
+                "
+                >/in/jorgeortega</span
+              >
               <span class="contact-link-arrow">→</span>
             </a>
-            <a href="https://github.com/jorgeortega" class="contact-link" target="_blank">
+            <a
+              href="https://github.com/jorgeortega"
+              class="contact-link"
+              target="_blank"
+            >
               <span>GitHub</span>
-              <span style="font-family:var(--mono);font-size:0.7rem;color:var(--text-dim)">github.com/jorgeortega</span>
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.7rem;
+                  color: var(--text-dim);
+                "
+                >github.com/jorgeortega</span
+              >
               <span class="contact-link-arrow">→</span>
             </a>
             <a href="mailto:jorgeortega@gmail.com" class="contact-link">
               <span>Email</span>
-              <span style="font-family:var(--mono);font-size:0.7rem;color:var(--text-dim)">jorgeortega@gmail.com</span>
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.7rem;
+                  color: var(--text-dim);
+                "
+                >jorgeortega@gmail.com</span
+              >
               <span class="contact-link-arrow">→</span>
             </a>
           </div>
@@ -301,7 +370,15 @@
     </section>
 
     <footer>
-      <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        "
+      >
         <span class="footer-copy">© 2026 Jorge Ortega</span>
         <span class="footer-status">
           <span class="status-dot"></span>
@@ -311,12 +388,36 @@
     </footer>
 
     <script>
+      // Years of experience
       const careerYears = new Date().getFullYear() - 2007;
-      const text = careerYears + ' years building products that scale.';
-    
-      document.getElementById('years-exp').textContent = text;
-      document.getElementById('years-exp-stat').textContent = careerYears;
-    </script>
+      const text = careerYears + " years building products that scale.";
 
+      document.getElementById("years-exp").textContent = text;
+      document.getElementById("years-exp-stat").textContent = careerYears;
+
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      // Toggle menu
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+
+        // Prevent scrolling when menu is open
+        document.body.style.overflow = navLinks.classList.contains("active")
+          ? "hidden"
+          : "auto";
+      });
+
+      // Close menu when a link is clicked
+      document.querySelectorAll(".nav-links a").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }),
+      );
+    </script>
   </body>
 </html>
